@@ -1,5 +1,7 @@
 <div align="center">
 
+<p><img src="assets/cover.svg" alt="OpenAndy — 把我自己开源" width="100%"></p>
+
 # OpenAndy
 
 **把我自己开源。**
