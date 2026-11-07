@@ -1,0 +1,73 @@
+name: 勘误与补充
+description: 提交有出处的勘误、补充或翻译。没有来源的补充不会被合并。
+title: "[correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢核对。这个仓库只接受**有公开来源**的修改。提交前请确认：
+        - 没有客户姓名、公司、岗位、合同金额、联系方式等隐私信息；
+        - 没有收益承诺、成功学叙事或课程引流；
+        - 涉及数字或时间口径时，已说明需要同步哪些文件。
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 类型
+      options:
+        - 事实勘误（数字、日期、事件）
+        - 口径冲突（材料之间不一致）
+        - 方法补充（自己用过之后的复盘）
+        - 翻译
+        - 工具或测试
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: file
+    attributes:
+      label: 涉及文件
+      placeholder: 例如 STORY.md / playbook/01-money-layers.md / openandy.py
+    validations:
+      required: true
+
+  - type: textarea
+    id: original
+    attributes:
+      label: 原文
+      description: 粘贴需要修改的那一句或那一段。
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议改成什么
+      description: 请直接给出可替换的文字，而不是只描述问题。
+      render: markdown
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: 来源链接与日期
+      description: 必须可公开访问。没有来源的补充请改为「方法补充」，并明确写成个人复盘。
+      placeholder: https://... （2026-11-07 访问）
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 内容不含隐私信息（客户、雇主、金额、联系方式等）
+          required: true
+        - label: 不包含收益承诺、职业承诺或医疗/投资建议
+          required: true
+        - label: 如涉及数字或口径，我已在描述中说明需要同步的文件
+          required: true

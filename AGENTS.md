@@ -8,7 +8,8 @@
 
 ## 1. 读取顺序
 
-1. 先读 [`llms.txt`](llms.txt)（索引，约 1 KB），判断任务需要哪几个条目；
+1. 先读 [`llms.txt`](llms.txt)（索引，约 2 KB），判断任务需要哪几个条目；
+2. 想知道"这个人是谁、边界在哪、怎么合作"，读 [`ME.md`](ME.md)；它是身份与边界说明，不是事实来源；
 2. 用 `python3 openandy.py ask <关键词>` 或 [`data/index.json`](data/index.json) 定位；
 3. 只读相关条目，不要默认把 `llms-full.txt` 全塞进上下文；
 4. 涉及事实、数字、时间、口径时，**必须**再读 [`SOURCES.md`](SOURCES.md)。

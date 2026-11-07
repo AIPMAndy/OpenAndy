@@ -30,6 +30,7 @@ See AGENTS.md and SOURCES.md in this file for the full rules.
 ## Documents
 
 - README.md
+- ME.md
 - STORY.md
 - PRINCIPLES.md
 - DECISIONS.md
@@ -51,11 +52,9 @@ See AGENTS.md and SOURCES.md in this file for the full rules.
 
 # OpenAndy
 
-**把一个人的经历、判断和代价，开源成人和 AI 都能读取的知识库。**
+**把我自己开源。**
 
-不是成功学，不是简历，不是又一本赚钱手册。
-
-**从湖北农村到腾讯、百度、大模型公司副总裁，再到 2026 年把这些方法免费放到 GitHub——包括走错的路和付过的代价。**
+经历、判断、错和代价，都在这里。人能看，AI 也能读。
 
 [![License: MIT](https://img.shields.io/badge/代码-MIT-111827?style=flat-square)](LICENSE)
 [![Content: CC BY-NC 4.0](https://img.shields.io/badge/内容-CC%20BY--NC%204.0-111827?style=flat-square)](LICENSE-CONTENT)
@@ -66,102 +65,148 @@ See AGENTS.md and SOURCES.md in this file for the full rules.
 
 ---
 
-**[📖 时间线与代价](STORY.md)** ｜ **[🧭 九条认知公理](PRINCIPLES.md)** ｜ **[✅ 可复用决策清单](DECISIONS.md)** ｜ **[📚 方法手册](playbook/)** ｜ **[🔍 事实来源与口径](SOURCES.md)** ｜ **[🤖 给 AI 的读取规则](AGENTS.md)** ｜ **[English](README_EN.md)**
+2026 年 1 月 12 日，北京零下 15 度。早上 6 点多，我出门坐地铁去北医三院，做眼睛手术。
 
-## 这个仓库解决什么问题
+躺在手术台上，我以为自己不紧张。但眼睛不会骗人。换上人工晶体，手术结束，我需要别人扶着才能回去休息。
 
-2026 年 11 月，我写过一篇文章，讲自己从一个湖北农村孩子走到副总裁，花十几年才弄懂赚钱。文章发出去以后，最常被问的不是"怎么做到的"，而是"你说的那些坑，具体是怎么发生的"。
+那天我想起自己这些年走过的路：湖北农村、辣椒拌饭、绿皮火车、腾讯、百度、副总裁。也想起手术前写在日记里的那句话——**"我燃烧自己努力工作，忙到忘记自己。"**
 
-文章是叙事，不好检索，也不好复用。所以有了这个仓库：**把那篇文章和我长期使用的思考规则，拆成有出处、可检索、能被 AI 直接当上下文读取的结构化内容。**
+这个仓库，是我把自己开源的地方。
 
-它直接回答四个问题：
+不是课程，不是简历，也不是"成功人士的十条建议"。我开倒过店，创业交过学费，2024 年身体出问题，2026 年上了手术台；我也确实从零做过亿级业务线、带过 50 人左右的团队、六年攒下 1000 多位有完整记录的咨询客户、帮父母把农产品做到一年 40 万产值。**两边都是真的，我都写进来。**
 
-| 你的问题 | 直接看哪里 |
-|---|---|
-| 这个人到底经历了什么，哪些是事实、哪些是他的判断 | [时间线](STORY.md) · [事实口径](SOURCES.md) |
-| 他做决定时实际用的是什么规则 | [九条认知公理](PRINCIPLES.md) · [决策清单](DECISIONS.md) |
-| 赚钱这件事，他自己是怎么分层的 | [赚钱的四层](playbook/01-money-layers.md) |
-| 我想让 AI 用这些经验，怎么接 | [给 AI 的规则](AGENTS.md) · [`llms.txt`](llms.txt) · [`llms-full.txt`](llms-full.txt) |
+## 这里有什么
 
-> **读完能拿走的东西**：一条带代价标注的时间线、9 条可复用的思考规则、5 份方法手册、一份决策自检清单，以及一套人和 AI 都能读的索引。所有数字均来自作者公开自述，未经独立审计；不提供收益、投资、医疗或法律建议。
+| 想看什么 | 直接看 | 里面是什么 |
+|---|---|---|
+| 我是谁、怎么跟我合作 | [ME.md](ME.md) | 一句话履历、我现在靠什么吃饭、我的偏好和偏见、我不做的事 |
+| 我这一路怎么走的 | [STORY.md](STORY.md) | 11 个阶段，每段写清得到什么、付了什么 |
+| 我怎么做判断 | [PRINCIPLES.md](PRINCIPLES.md) | 九条认知公理，加上质疑需求→删除→简化→加速→自动化的顺序 |
+| 遇到具体问题怎么定 | [DECISIONS.md](DECISIONS.md) | 七组能直接打勾的清单：接不接这个活、要不要做副业、流水还是利润 |
+| 赚钱这件事我怎么分层 | [playbook/01](playbook/01-money-layers.md) | 时间→经验→商业结果→内容获客，四层各自的代价 |
+| 我怎么赚到第一笔自己的钱 | [playbook/02](playbook/02-first-client.md) | 六年、1000+ 客户，从一次改简历到长期信任 |
+| 我怎么帮父母做生意 | [playbook/03](playbook/03-ai-for-small-business.md) | 免费工具、不到 1 万粉、一年 40 万产值 |
+| 我付了什么代价 | [playbook/04](playbook/04-what-it-cost.md) | 眼睛、时间所有权，哪些钱不值得赚 |
+| 我为什么免费 | [playbook/05](playbook/05-why-open.md) | 小时候没资源，所以少让人花几千块、少走几个月 |
+| 这些事实从哪来、哪些对不上 | [SOURCES.md](SOURCES.md) | 来源分级、数字定语、口径冲突、隐私边界 |
+| 让 AI 读、让 AI 引用 | [AGENTS.md](AGENTS.md) · [llms.txt](llms.txt) | 引用规则、索引、全量文本 |
 
-## 这个仓库不是什么
+## 为什么开源
 
-按「先删非必需项」的原则，以下内容明确不做，避免它变成又一个内容农场：
+我小时候没有多少资源，很多东西只能靠自己一点一点研究。如果今天一个普通人，能通过我公开的一份文档、一个工具，少花几千块钱、少走几个月弯路，这件事就值得做。
 
-1. **不是成功学。** [时间线](STORY.md) 里写进了开倒的店、白内障手术、脂肪肝，以及"我还没有成功"。
-2. **不是课程或付费引流页。** 全部内容免费、无需登录、无需加微信，没有转化漏斗。
-3. **不是个人简历。** 履历只保留已公开发表的自述，不补未公开的公司名、客户名、合同金额与联系方式。
-4. **不是 AI 分身或聊天机器人。** 本仓库不调用任何模型、不上传数据。[AGENTS.md](AGENTS.md) 只规定 AI 该怎样引用这些材料、以及什么时候必须说"不知道"。
-5. **不承诺收益。** 文中的 30 万月流水、1000+ 咨询客户、6 万粉丝、40 万年产值，都是作者自述的历史记录，不是可复制的结果，也不是预测。
+当然，我还要赚钱。我有家庭，有孩子，有公司要经营。免费的是这些文档和工具，收费的是要落到你业务里的服务。这两件事不冲突。
 
-## 30 秒上手
+## 30 秒用起来
 
-零依赖，只需 Python 3.9+。不需要安装、不需要 API Key、不联网。
+零依赖，不安装、不联网、不要 API Key。脚本只做检索和一致性检查，不生成建议。
 
 ```bash
 git clone https://github.com/AIPMAndy/OpenAndy.git
 cd OpenAndy
 
-python3 openandy.py list              # 列出全部条目
-python3 openandy.py ask 副业          # 按关键词检索
-python3 openandy.py ask 身体 时间      # 多个词是"或"关系，按命中权重排序
-python3 openandy.py show money-layers # 输出某一篇全文
-python3 openandy.py check             # 校验索引、链接、口径与敏感信息
-python3 openandy.py build             # 重新生成 llms-full.txt
+python3 openandy.py list                # 10 个条目
+python3 openandy.py ask 副业            # 关键词检索
+python3 openandy.py show what-it-cost   # 输出某篇全文
+python3 openandy.py check               # 查索引、链接、来源、隐私、构建产物
+python3 openandy.py build               # 重新生成 llms-full.txt
 ```
 
-想让人读，直接看 [`index.html`](index.html)（单文件静态页，无构建、无外部依赖）；想让 AI 读，把 [`llms-full.txt`](llms-full.txt) 塞进上下文即可。
+想让人读，打开 [`index.html`](index.html)；想让 AI 读，先给 [`llms.txt`](llms.txt) 和 [`AGENTS.md`](AGENTS.md)，再按需加载 [`llms-full.txt`](llms-full.txt)。
 
-## 事实与口径（重要）
+## 事实与边界
 
-这个仓库最容易被误用的地方，是把"一个人的经验"当成"普遍规律"。为此做三条硬约束：
+这段请务必看，因为它决定你该怎么用这里的东西。
 
-- **分级标注。** `[公开自述]` = 作者本人公开发表、未经独立审计；`[工作原则]` = 作者长期使用的思考规则；`[本仓库整理]` = 由前两者推导的清单或方法，不是事实。完整定义见 [SOURCES.md](SOURCES.md)。
-- **口径不合并。** 关于入职年份、任职区间，不同公开材料存在差异。本仓库**只采用 2026-11-07 那篇文章的自述口径**，不推断、不填平、不混入其他材料。
-- **隐私不进仓库。** 不写客户姓名、具体雇主、家庭成员身份信息、电话与私人联系方式；贡献者也不得提交。这条由 `openandy.py check` 做基础扫描。
+- **数字都是我自己说的，没审计。** 40 万是**产值**不是利润；30 万是**月流水**不是利润；1000+ 是**有完整文档记录的咨询客户数**，不是 Offer 数；6 万多是全网粉丝合计，没分平台核验。
+- **年份只按 2026-11-07 那篇文章算。** 另外一些履历材料的年份对不上，我不合并、不推断、不取中间值。对不上就说对不上。
+- **客户、公司、金额、家人信息不写。** 能讲的是方法，不是别人的隐私。
+- **不给收益承诺，不做医疗、投资、职业建议。** 我的路径只有一条，样本量是 1，照着做不保证任何结果。
+- **相关不等于因果。** 我做了什么、后来发生了什么，不等于前者导致后者。文章里那些转折，我尽量写清哪些是我当时的判断，哪些是事后归因。
 
-不同材料的时间口径差异、以及为什么这样处理，见 [SOURCES.md](SOURCES.md)。
+## 关于我
 
-## 仓库结构
+AI 酋长 Andy（GitHub / X / 微信：`AIPMAndy`）。前腾讯、百度 AI 产品负责人，做过大模型公司副总裁，现在自己干：面向企业做 AI + IP 获客，面向个人做高管 AI 陪跑、求职陪跑、副业陪跑。
 
-```
-OpenAndy/
-├── README.md / README_EN.md     入口
-├── STORY.md                     时间线：事实 / 当时判断 / 代价 / 可迁移的一条
-├── PRINCIPLES.md                九条认知公理 + 第一性原理工程方法
-├── DECISIONS.md                 可复用决策清单（把经历变成动作）
-├── SOURCES.md                   事实来源、分级、口径冲突与隐私边界
-├── AGENTS.md                    给 AI Agent 的读取与引用规则
-├── playbook/                    5 份方法手册
-├── data/index.json              唯一索引（只存元数据，不复制正文）
-├── openandy.py                  零依赖 CLI：list / ask / show / check / build
-├── tests/test_openandy.py       对行为做实质断言的测试
-├── llms.txt / llms-full.txt     给 AI 的索引与全量文本
-├── index.html                   单文件阅读页（不是独立 Web 项目）
-└── CONTRIBUTING.md              贡献规则
-```
+个人官网 [metaver.vip](https://metaver.vip/)，全部开源项目在 [GitHub](https://github.com/AIPMAndy) 和[总目录](https://aipmandy.github.io/)。
 
-**单一真源**：Markdown 是正文唯一来源，`data/index.json` 只存 id / 标题 / 路径 / 标签 / 摘要 / 来源，不复制内容。`check` 会验证两者是否漂移。
+我的愿景写出来很大：**让更多人类通过 AI 实现财富自由和精神自由。** 但它可以从一个人第一次靠自己的能力赚到 400 元开始。
 
-## 参与贡献
+## 许可
 
-欢迎补充**有出处**的勘误、把某条方法用到自己场景后的复盘、以及翻译。不接受没有来源的成功案例、收益承诺和任何客户隐私。规则见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+代码 [MIT](LICENSE)，内容 [CC BY-NC 4.0](LICENSE-CONTENT)。引用请附来源链接，保留事实分级标记；商用授权另谈。
 
-## 关于作者
+<sub>2026-11-07 · v0.1.0 · 更新记录见 [CHANGELOG.md](CHANGELOG.md)</sub>
 
-**AI 酋长 Andy**（GitHub / X / 微信：`AIPMAndy`），前腾讯、百度 AI 产品负责人，曾任大模型公司副总裁，现为 AI 创业者。把实战经验开源成免费的中文手册与工具，个人官网 [metaver.vip](https://metaver.vip/)，全部开源项目见 [GitHub](https://github.com/AIPMAndy) 与 [总目录](https://aipmandy.github.io/)。
+---
 
-愿景：**让更多人类通过 AI 实现财富自由和精神自由。** 这句话很大，但它可以从一个人第一次靠自己的能力赚到 400 元开始。
+## FILE: ME.md
 
-## 许可与边界
+# 我是谁
 
-- 代码（CLI、测试、页面）：[MIT](LICENSE)
-- 正文与文档：[CC BY-NC 4.0](LICENSE-CONTENT)（署名、非商业）
-- 引用请标注来源与链接；转载原文、商用授权需另行联系。
-- 内容基于作者截至 **2026-11-07** 的公开自述，不构成职业、投资、财税、医疗或法律建议。个人情况不同，重要决定请自行核验。
+> 这一页是"开源我自己"的入口。事实来自 2026-11-07 那篇文章和公开资料；带 `[本仓库整理]` 的是我从文章里归纳的，不是我的原话。
 
-<sub>维护时间 2026-11-07 · v0.1.0 · 本仓库内容不承诺收益，所有数字均为历史自述而非业绩保证。</sub>
+## 一句话
+
+湖北农村出来，学数学，进腾讯做 AI，去百度做大模型和视频生成，创业，做过大模型公司副总裁，现在自己干。
+
+## 我从哪来
+
+`[公开自述]` 出生在湖北农村，小时候辣椒拌饭是常事。父母为还债去宁波、武汉打工。爷爷是高中老师，是他让我很早就相信，普通人可以靠知识改变命运。
+
+初中失眠两年，那个年代没有条件找专业帮助，就自己去研究哲学、佛学、催眠和冥想，想弄明白人为什么痛苦、能不能控制自己的思想。那段经历留下的不是知识，是一个习惯：**不轻易相信别人给的标准答案。**
+
+后来去青岛读数学。数学教我的是别只看表面现象，要看背后的规律。
+
+## 我做过什么
+
+- 大学开始折腾生意：零食、健身、闲置交易、餐饮。为弄明白餐饮店怎么运转，去肯德基打了两个月工。团队最多 30 多人，有的项目月流水做到 30 万。**也开倒过店。**
+- 坐绿皮火车从青岛到武汉，再去上海找工作。2017 年进腾讯做 AI，在实验室做产品，后来和老板对赌，从零做一条亿级 AI 业务线——没有运营自己就是运营，没有商务自己就是商务。
+- 2022 年去百度，做大模型和视频生成的产品化。
+- 后来快速做了一家小公司，干净收尾；再加入大模型公司做到副总裁，带 50 人左右团队，参与融资和大型企业项目。
+- 2020 年起，用业余时间给年轻人做职业咨询。六年，1000 多位有完整文档记录的客户。
+- 2026 年，把这些方法开源。
+
+完整时间线和每一段的代价，见 [STORY.md](STORY.md)。
+
+## 我现在靠什么吃饭
+
+`[公开自述]` 面向企业做 AI + IP 获客；面向个人做高管 AI 陪跑、求职陪跑、职场人副业陪跑、个人 AI + IP 陪跑。文档和工具免费，服务收费。
+
+咨询入口：微信 `AIPMAndy`，备注你在做什么。官网 [metaver.vip](https://metaver.vip/)。
+
+## 我的偏好
+
+`[本仓库整理]` 从这篇文章和这几年做过的事里，能看出的倾向：
+
+1. **偏好真实的东西。** 帮母亲做账号时，我的建议不是"讲点高深的"，而是对着鱼塘、土鸡、柚子，把真实的东西讲清楚。
+2. **偏好小闭环。** 企业 AI 转型我先建最小闭环，再谈规模化；副业也是先拿到第一位付费客户，再谈公司。
+3. **偏好长期关系。** 一次咨询可能变成几年的信任。我当年以为卖的是咨询，后来发现积累的是关系。
+4. **偏好把复杂事变简单。** 做产品这些年，最值钱的能力是从技术翻译到业务，不是把术语说得更玄。
+5. **偏好自己下场。** 没有运营就自己当运营，没有商务就自己当商务；不先要资源。
+
+## 我承认的偏见和错误
+
+这些话文章里都写过，不用替我遮：
+
+- 我曾经以为，进大厂、拿高薪、做管理、负责大项目，就是普通人改变命运的最好证明。**后来发现我负责过很大的业务，那些钱不是我的。**
+- 我曾经以为只要足够努力就能改变命运。后来才明白，努力只是最基本的条件。
+- 我会因为业务不够聚焦而焦虑，会犯投资错误，会因为收入波动重新调整计划。
+- 我会用"忙"掩盖判断。那句话不是修辞：**"我燃烧自己努力工作，忙到忘记自己。"**
+- 手术之后我也没有突然变成无所不能的人。还是得工作、赚钱、面对具体而琐碎的困难。
+
+## 我不做的事
+
+- **不承诺收益。** 我的路径只有一条，样本量是 1。你照着做，不保证任何结果。
+- **不拿别人的隐私换内容。** 客户、学生、合作方的姓名、公司、岗位、金额，不写。
+- **不把对不上的事实拼成一条顺滑的故事。** 年份对不上就说对不上，见 [SOURCES.md](SOURCES.md)。
+- **不接代价明显不值得的活。** `[本仓库整理]` 这是文章里"学会分辨哪些钱值得赚，哪些代价不值得付"的直接推论，也是我 2026 年之后想守住的东西。
+
+## 一句话收尾
+
+我没办法决定自己出生时拿到什么牌，但我可以不断学习，争取把手里的牌打得更好。
+
+<sub>来源 S1 / S2 / S4 · 最后核验 2026-11-07 · 这一页会随我变化，不保证稳定。</sub>
 
 ---
 
@@ -169,8 +214,9 @@ OpenAndy/
 
 # 时间线：事实、判断、代价
 
-> 全部事实来自 `[S1]` 作者 2026-11-07 的公开自述，未经独立审计；任职年份只采用该文口径，不与其他材料合并（见 [SOURCES.md](SOURCES.md) 第 4 节）。
-> 「当时判断」是作者对当时想法的自述，「代价」是同一篇文章里写出的结果；「可迁移的一条」是 `[本仓库整理]` 的推导，**置信度有限**，不是普遍规律。
+> 这一页是我从湖北农村到今天的路线。每一段写四栏：发生了什么、我当时怎么想、付了什么、后来觉得哪条能带走。
+>
+> 事实来自 2026-11-07 那篇文章（S1），未经独立审计；任职年份只采用该文口径，不与其他材料合并（见 [SOURCES.md](SOURCES.md) 第 4 节）。第四栏是 `[本仓库整理]` 的推导，**置信度有限**，不是普遍规律。
 
 每个阶段强制写四栏，是为了不把这条路径包装成一条只涨不跌的曲线。**对立统一**：任何收获都同时有支出。
 
@@ -278,9 +324,9 @@ OpenAndy/
 
 # 九条认知公理与工程方法
 
-> `[工作原则]` 这一整份文件记录的是**作者用来做判断的规则**（来源 S3），不是客观规律，也不是从经历里"总结出来的成功经验"。规则本身有适用边界，用错场景会得出坏结论。
-
-文章里最容易被忽略的一句是：「我曾经以为，只要足够努力，一个人就能够改变自己的命运。后来才明白，努力只是最基本的条件。」这句话背后不是情绪，而是一套判断方法。把它写清楚，比复述履历更有用。
+> 这九条不是我从书上抄的，是我做判断时真正在用的约束（来源 S3）。它们不是客观规律，用错场景会得出坏结论。
+>
+> 我写过一句话：「我曾经以为，只要足够努力，一个人就能够改变自己的命运。后来才明白，努力只是最基本的条件。」这句话背后不是情绪，是一套判断方法。把它写清楚，比复述履历有用。
 
 ## 一、九条认知公理
 
@@ -361,8 +407,9 @@ OpenAndy/
 
 # 可复用决策清单
 
-> `[本仓库整理]` 本文件把 [STORY.md](STORY.md) 的经历与 [PRINCIPLES.md](PRINCIPLES.md) 的规则，转成**可以直接照着打勾的动作**。它们是推导出来的检查项，不是经验证的方法论，也不是成功保证。
-> 用法：遇到具体决定时，只翻对应那一节；打不完的勾就是当前最该处理的风险。
+> 这一页是给我自己用的：把经历和规则压成能直接打勾的动作。遇到具体决定，只翻对应那一节；打不完的勾，就是当前最该处理的风险。
+>
+> 标记 `[本仓库整理]`：这些是推导出来的检查项，不是经验证的方法论，也不是成功保证。
 
 ---
 
@@ -481,7 +528,7 @@ OpenAndy/
 | ID | 来源 | 性质 | 使用范围 |
 |---|---|---|---|
 | **S1** | 《从绿皮火车到副总裁，我花了十几年才弄懂赚钱》，AI 酋长 Andy，2026-11-07，[微信公众号原文](https://mp.weixin.qq.com/s/2wu5_v0nupEDWT2S3E_a7w) | 作者本人公开发表的自述，**未经独立审计** | 时间线、全部数字、案例、引语 |
-| **S2** | [GitHub Profile README](https://github.com/AIPMAndy/AIPMAndy) 与 [开源作品总目录 llms.txt](https://aipmandy.github.io/llms.txt) | 作者维护的公开身份信息 | 统一账号、官网、服务方向、开源惯例 |
+| **S2** | [GitHub Profile README](https://github.com/AIPMAndy/AIPMAndy) 与 [开源作品总目录 llms.txt](https://aipmandy.github.io/llms.txt) | 作者维护的公开身份信息 | 统一账号、官网、服务方向、开源惯例；[ME.md](ME.md) 的公开身份与合作入口 |
 | **S3** | 作者在 AI 协作中长期使用的认知公理与工程方法（本次由作者提供、经本仓库整理公开） | 工作规则，**不是事实陈述** | [PRINCIPLES.md](PRINCIPLES.md)、[DECISIONS.md](DECISIONS.md) 的规则部分 |
 | **S4** | 本仓库基于 S1–S3 整理的结构、清单、索引与代码 | 推导与工程产物 | 目录、[`data/index.json`](data/index.json)、CLI、测试 |
 
@@ -502,7 +549,9 @@ OpenAndy/
 
 ## 4. 已知口径冲突（不合并）
 
-**问题**：作者在 2026-11-07 文章中给出的任职年份，与作者在其他公开场合（演讲简介、项目资料等）出现的履历年份存在约 1–2 年的差异。例如文章写「2017 年进入腾讯」「2022 年离开腾讯去了百度」，而其他材料的阶段划分与此不完全一致。
+**问题**：作者在 2026-11-07 文章中给出的任职年份，与另外一些履历材料（演讲简介、项目资料等）的年份不完全一致。例如文章写「2017 年进入腾讯」「2022 年离开腾讯去了百度」，而另一些材料的阶段划分与此不同。
+
+**不记录具体差值**：那些材料并未在本仓库公开，写出「差几年」等于引入一个读者无法核对的数字。本仓库只记录「存在差异」这一事实，不给出量化描述。
 
 **处理方式**：
 
@@ -906,7 +955,8 @@ OpenAndy/
 
 ## 1. 读取顺序
 
-1. 先读 [`llms.txt`](llms.txt)（索引，约 1 KB），判断任务需要哪几个条目；
+1. 先读 [`llms.txt`](llms.txt)（索引，约 2 KB），判断任务需要哪几个条目；
+2. 想知道"这个人是谁、边界在哪、怎么合作"，读 [`ME.md`](ME.md)；它是身份与边界说明，不是事实来源；
 2. 用 `python3 openandy.py ask <关键词>` 或 [`data/index.json`](data/index.json) 定位；
 3. 只读相关条目，不要默认把 `llms-full.txt` 全塞进上下文；
 4. 涉及事实、数字、时间、口径时，**必须**再读 [`SOURCES.md`](SOURCES.md)。
@@ -1045,45 +1095,64 @@ PR 描述里请写清：
 
 # OpenAndy
 
-**An open, machine-readable knowledge base of one person's experience, judgement, and the price paid for it.**
+**I'm open-sourcing myself.**
 
-Built from a 2026-11-07 essay by AI 酋长 Andy (GitHub / X: [@AIPMAndy](https://github.com/AIPMAndy)): from a rural village in Hubei to AI product roles at Tencent and Baidu, to VP at a large-model company, to publishing the methods for free on GitHub.
+The timeline, the judgement calls, the mistakes and what they cost. Humans can read it; AI can read it too.
 
-## What this is
+---
 
-- A timeline where **every milestone states the cost**, not just the outcome: failed shops, cataract surgery, fatty liver, and "I have not succeeded; I just have more choices than I did as a child." → [STORY.md](STORY.md)
-- **Nine axioms** the author actually uses to reason, plus a first-principles engineering method (question the requirement → delete → simplify → speed up → automate last). → [PRINCIPLES.md](PRINCIPLES.md)
-- **Reusable checklists** that turn experience into decisions. → [DECISIONS.md](DECISIONS.md)
-- **Five playbooks**: four layers of earning, the first paying client, AI for a small family business, what it cost, why open source. → [playbook/](playbook/)
-- A **zero-dependency index** for humans and AI: [`data/index.json`](data/index.json), [`llms.txt`](llms.txt), [`llms-full.txt`](llms-full.txt), and [AGENTS.md](AGENTS.md), which tells an AI when it must answer "I don't know".
+On 2026-01-12, Beijing was -15°C. I left home at 6 a.m. and took the subway to Peking University Third Hospital for eye surgery.
 
-## What this is not
+I thought I wasn't nervous. My eyes disagreed. They replaced the lens with an artificial one; when it was over, someone had to help me walk back and rest.
 
-Not a success story, not a résumé, not a course, not a lead-gen funnel, not a chatbot. It calls no model, uploads nothing, requires no API key, and promises no income. All figures (¥300k monthly revenue at a student business, 1,000+ documented coaching clients, 60k followers, ¥400k annual revenue for a family farm business) are **the author's own public claims, not independently audited results**.
+Lying there, I retraced the route: a village in Hubei, chili over rice, a green-slow train, Tencent, Baidu, a VP title. And a line I had written in my diary: *"I burned myself to work hard, and forgot myself."*
 
-## Quick start
+This repository is where I open-source that.
+
+Not a course, not a résumé, not "ten habits of successful people". I have run a restaurant into the ground, paid tuition to failed startups, had health problems in 2024 and surgery in 2026. I have also built a business line from zero to nine figures in revenue scale, led a team of about 50, spent six years coaching 1,000+ documented clients, and helped my parents turn a small farm business into ¥400k of annual output. **Both sides are true, and both are here.**
+
+## What is inside
+
+| What you want | Where | What it is |
+|---|---|---|
+| Who I am, how to work with me | [ME.md](ME.md) | One-paragraph bio, what I do for a living, my biases, what I refuse to do |
+| How I got here | [STORY.md](STORY.md) | 11 stages; each states what I gained and what it cost |
+| How I make decisions | [PRINCIPLES.md](PRINCIPLES.md) | Nine axioms, plus question → delete → simplify → speed up → automate |
+| What to check before deciding | [DECISIONS.md](DECISIONS.md) | Seven checklists, from taking a job to revenue vs. profit |
+| How earning actually layers | [playbook/01](playbook/01-money-layers.md) | Time → experience → business outcome → content-led inbound |
+| My first money earned on my own | [playbook/02](playbook/02-first-client.md) | Six years, 1,000+ clients, one résumé edit at a time |
+| AI for a very small business | [playbook/03](playbook/03-ai-for-small-business.md) | Free tools, under 10k followers, ¥400k annual output |
+| What it cost | [playbook/04](playbook/04-what-it-cost.md) | Eyes, time ownership, and which money is not worth earning |
+| Why this is free | [playbook/05](playbook/05-why-open.md) | I grew up without resources; save others a few thousand yuan and a few months |
+| Where the facts come from | [SOURCES.md](SOURCES.md) | Source grades, figures with qualifiers, conflicting dates, privacy limits |
+| For AI readers | [AGENTS.md](AGENTS.md) · [llms.txt](llms.txt) | Citation rules, index, full text |
+
+## Read the numbers carefully
+
+- **Every figure is my own claim, unaudited.** ¥400k is gross output, not profit. ¥300k is monthly GMV, not profit. 1,000+ is documented coaching clients, not job offers. 60k+ is combined followers across platforms, not verified per platform.
+- **Dates follow the 2026-11-07 essay only.** Other materials disagree; I do not merge them, average them, or explain the gap away.
+- **No client names, employers, contract values or family details.** Methods are shareable; other people's privacy is not.
+- **No income promises, no medical, investment or career advice.** Sample size: one person.
+
+## 30-second start
 
 ```bash
 git clone https://github.com/AIPMAndy/OpenAndy.git
 cd OpenAndy
 python3 openandy.py list
 python3 openandy.py ask 副业
-python3 openandy.py show money-layers
+python3 openandy.py show what-it-cost
 python3 openandy.py check
 ```
 
-Requires Python 3.9+, no third-party packages, no network access.
-
-## Evidence and scope
-
-Every claim is tagged `[公开自述]` (public self-account, unaudited), `[工作原则]` (the author's working rules), or `[本仓库整理]` (derived checklists, not facts). Where other materials give different employment years, this repository uses **only the 2026-11-07 essay's dating** and does not reconcile or infer. Customer names, employers, contract values, family identity details and private contact information are excluded by design. See [SOURCES.md](SOURCES.md).
+Python 3.9+, zero dependencies, no network, no API key, no model calls.
 
 ## Author
 
-AI 酋长 Andy — former AI product lead at Tencent and Baidu, former VP at a large-model company, now an AI entrepreneur. Publishes free Chinese handbooks and tools: [metaver.vip](https://metaver.vip/) · [all projects](https://aipmandy.github.io/) · WeChat `AIPMAndy`.
+AI 酋长 Andy (GitHub / X / WeChat: `AIPMAndy`). Former AI product lead at Tencent and Baidu, former VP at a large-model company, now an independent AI entrepreneur. [metaver.vip](https://metaver.vip/) · [all projects](https://aipmandy.github.io/)
 
-Vision: *let more people reach financial and mental freedom through AI* — starting with one person earning their first ¥400 on their own ability.
+Vision: *let more people reach financial and mental freedom through AI.* It can start with one person earning their first ¥400 on their own ability.
 
 ## License
 
-Code: [MIT](LICENSE). Content: [CC BY-NC 4.0](LICENSE-CONTENT). Not career, investment, tax, medical or legal advice. Maintained 2026-11-07.
+Code: [MIT](LICENSE). Content: [CC BY-NC 4.0](LICENSE-CONTENT). Keep the fact-grade markers when quoting. Maintained 2026-11-07.

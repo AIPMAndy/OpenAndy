@@ -1,44 +1,63 @@
 # OpenAndy
 
-**An open, machine-readable knowledge base of one person's experience, judgement, and the price paid for it.**
+**I'm open-sourcing myself.**
 
-Built from a 2026-11-07 essay by AI 酋长 Andy (GitHub / X: [@AIPMAndy](https://github.com/AIPMAndy)): from a rural village in Hubei to AI product roles at Tencent and Baidu, to VP at a large-model company, to publishing the methods for free on GitHub.
+The timeline, the judgement calls, the mistakes and what they cost. Humans can read it; AI can read it too.
 
-## What this is
+---
 
-- A timeline where **every milestone states the cost**, not just the outcome: failed shops, cataract surgery, fatty liver, and "I have not succeeded; I just have more choices than I did as a child." → [STORY.md](STORY.md)
-- **Nine axioms** the author actually uses to reason, plus a first-principles engineering method (question the requirement → delete → simplify → speed up → automate last). → [PRINCIPLES.md](PRINCIPLES.md)
-- **Reusable checklists** that turn experience into decisions. → [DECISIONS.md](DECISIONS.md)
-- **Five playbooks**: four layers of earning, the first paying client, AI for a small family business, what it cost, why open source. → [playbook/](playbook/)
-- A **zero-dependency index** for humans and AI: [`data/index.json`](data/index.json), [`llms.txt`](llms.txt), [`llms-full.txt`](llms-full.txt), and [AGENTS.md](AGENTS.md), which tells an AI when it must answer "I don't know".
+On 2026-01-12, Beijing was -15°C. I left home at 6 a.m. and took the subway to Peking University Third Hospital for eye surgery.
 
-## What this is not
+I thought I wasn't nervous. My eyes disagreed. They replaced the lens with an artificial one; when it was over, someone had to help me walk back and rest.
 
-Not a success story, not a résumé, not a course, not a lead-gen funnel, not a chatbot. It calls no model, uploads nothing, requires no API key, and promises no income. All figures (¥300k monthly revenue at a student business, 1,000+ documented coaching clients, 60k followers, ¥400k annual revenue for a family farm business) are **the author's own public claims, not independently audited results**.
+Lying there, I retraced the route: a village in Hubei, chili over rice, a green-slow train, Tencent, Baidu, a VP title. And a line I had written in my diary: *"I burned myself to work hard, and forgot myself."*
 
-## Quick start
+This repository is where I open-source that.
+
+Not a course, not a résumé, not "ten habits of successful people". I have run a restaurant into the ground, paid tuition to failed startups, had health problems in 2024 and surgery in 2026. I have also built a business line from zero to nine figures in revenue scale, led a team of about 50, spent six years coaching 1,000+ documented clients, and helped my parents turn a small farm business into ¥400k of annual output. **Both sides are true, and both are here.**
+
+## What is inside
+
+| What you want | Where | What it is |
+|---|---|---|
+| Who I am, how to work with me | [ME.md](ME.md) | One-paragraph bio, what I do for a living, my biases, what I refuse to do |
+| How I got here | [STORY.md](STORY.md) | 11 stages; each states what I gained and what it cost |
+| How I make decisions | [PRINCIPLES.md](PRINCIPLES.md) | Nine axioms, plus question → delete → simplify → speed up → automate |
+| What to check before deciding | [DECISIONS.md](DECISIONS.md) | Seven checklists, from taking a job to revenue vs. profit |
+| How earning actually layers | [playbook/01](playbook/01-money-layers.md) | Time → experience → business outcome → content-led inbound |
+| My first money earned on my own | [playbook/02](playbook/02-first-client.md) | Six years, 1,000+ clients, one résumé edit at a time |
+| AI for a very small business | [playbook/03](playbook/03-ai-for-small-business.md) | Free tools, under 10k followers, ¥400k annual output |
+| What it cost | [playbook/04](playbook/04-what-it-cost.md) | Eyes, time ownership, and which money is not worth earning |
+| Why this is free | [playbook/05](playbook/05-why-open.md) | I grew up without resources; save others a few thousand yuan and a few months |
+| Where the facts come from | [SOURCES.md](SOURCES.md) | Source grades, figures with qualifiers, conflicting dates, privacy limits |
+| For AI readers | [AGENTS.md](AGENTS.md) · [llms.txt](llms.txt) | Citation rules, index, full text |
+
+## Read the numbers carefully
+
+- **Every figure is my own claim, unaudited.** ¥400k is gross output, not profit. ¥300k is monthly GMV, not profit. 1,000+ is documented coaching clients, not job offers. 60k+ is combined followers across platforms, not verified per platform.
+- **Dates follow the 2026-11-07 essay only.** Other materials disagree; I do not merge them, average them, or explain the gap away.
+- **No client names, employers, contract values or family details.** Methods are shareable; other people's privacy is not.
+- **No income promises, no medical, investment or career advice.** Sample size: one person.
+
+## 30-second start
 
 ```bash
 git clone https://github.com/AIPMAndy/OpenAndy.git
 cd OpenAndy
 python3 openandy.py list
 python3 openandy.py ask 副业
-python3 openandy.py show money-layers
+python3 openandy.py show what-it-cost
 python3 openandy.py check
 ```
 
-Requires Python 3.9+, no third-party packages, no network access.
-
-## Evidence and scope
-
-Every claim is tagged `[公开自述]` (public self-account, unaudited), `[工作原则]` (the author's working rules), or `[本仓库整理]` (derived checklists, not facts). Where other materials give different employment years, this repository uses **only the 2026-11-07 essay's dating** and does not reconcile or infer. Customer names, employers, contract values, family identity details and private contact information are excluded by design. See [SOURCES.md](SOURCES.md).
+Python 3.9+, zero dependencies, no network, no API key, no model calls.
 
 ## Author
 
-AI 酋长 Andy — former AI product lead at Tencent and Baidu, former VP at a large-model company, now an AI entrepreneur. Publishes free Chinese handbooks and tools: [metaver.vip](https://metaver.vip/) · [all projects](https://aipmandy.github.io/) · WeChat `AIPMAndy`.
+AI 酋长 Andy (GitHub / X / WeChat: `AIPMAndy`). Former AI product lead at Tencent and Baidu, former VP at a large-model company, now an independent AI entrepreneur. [metaver.vip](https://metaver.vip/) · [all projects](https://aipmandy.github.io/)
 
-Vision: *let more people reach financial and mental freedom through AI* — starting with one person earning their first ¥400 on their own ability.
+Vision: *let more people reach financial and mental freedom through AI.* It can start with one person earning their first ¥400 on their own ability.
 
 ## License
 
-Code: [MIT](LICENSE). Content: [CC BY-NC 4.0](LICENSE-CONTENT). Not career, investment, tax, medical or legal advice. Maintained 2026-11-07.
+Code: [MIT](LICENSE). Content: [CC BY-NC 4.0](LICENSE-CONTENT). Keep the fact-grade markers when quoting. Maintained 2026-11-07.

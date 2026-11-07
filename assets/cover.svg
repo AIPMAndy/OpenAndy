@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="OpenAndy — 把我自己开源。经历、判断、错和代价，都在这里。">
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c9b9a6" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#c9b9a6" stop-opacity="1"/>
+      <stop offset="1" stop-color="#c9b9a6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="420" fill="#faf9f6"/>
+  <rect x="0" y="0" width="1200" height="6" fill="#8a4b1f"/>
+
+  <!-- faint baseline grid -->
+  <g stroke="#e8e4da" stroke-width="1">
+    <line x1="72" y1="96" x2="1128" y2="96"/>
+    <line x1="72" y1="180" x2="1128" y2="180"/>
+    <line x1="72" y1="264" x2="1128" y2="264"/>
+    <line x1="72" y1="348" x2="1128" y2="348"/>
+  </g>
+
+  <!-- timeline: one path, with cost marked -->
+  <polyline points="700,300 762,268 824,276 886,214 948,226 1010,150 1072,160"
+            fill="none" stroke="#1c1c1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <g fill="#faf9f6" stroke="#1c1c1a" stroke-width="2.5">
+    <circle cx="700" cy="300" r="6"/>
+    <circle cx="762" cy="268" r="6"/>
+    <circle cx="824" cy="276" r="6"/>
+    <circle cx="886" cy="214" r="6"/>
+    <circle cx="1010" cy="150" r="6"/>
+    <circle cx="1072" cy="160" r="6"/>
+  </g>
+  <!-- the turning point is not a peak -->
+  <circle cx="948" cy="226" r="9" fill="#8a4b1f" stroke="#8a4b1f"/>
+  <line x1="948" y1="226" x2="948" y2="330" stroke="#8a4b1f" stroke-width="1" stroke-dasharray="3 4"/>
+  <text x="948" y="352" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif"
+        font-size="13" fill="#8a4b1f" text-anchor="middle">代价显性化</text>
+
+  <text x="72" y="150" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif"
+        font-size="76" font-weight="700" fill="#1c1c1a" letter-spacing="-2">OpenAndy</text>
+
+  <text x="72" y="200" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif"
+        font-size="26" fill="#8a4b1f">把我自己开源。</text>
+  <text x="72" y="238" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif"
+        font-size="21" fill="#1c1c1a">经历、判断、错和代价，都在这里。</text>
+
+  <text x="72" y="286" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif"
+        font-size="14" fill="#5f5d57">不是成功学，不是简历，不是又一本赚钱手册。</text>
+
+  <line x1="72" y1="330" x2="640" y2="330" stroke="url(#fade)" stroke-width="1"/>
+
+  <text x="72" y="368" font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="13" fill="#5f5d57">AI酋长Andy · 2026-11-07 · 代码 MIT / 内容 CC BY-NC 4.0</text>
+
+  <text x="1128" y="368" font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="13" fill="#8a7f70" text-anchor="end">self-account, unaudited</text>
+</svg>

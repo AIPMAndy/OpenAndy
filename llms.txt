@@ -1,28 +1,29 @@
 # OpenAndy
 
-> 把一个人的经历、判断和代价，开源成人和 AI 都能读取的知识库。作者：AI酋长Andy（GitHub / X：@AIPMAndy），个人官网 https://metaver.vip/ 。
+> 把我自己开源。经历、判断、错和代价，都在这里。作者：AI酋长Andy（GitHub / X：@AIPMAndy），个人官网 https://metaver.vip/ 。
 > 仓库：https://github.com/AIPMAndy/OpenAndy · 许可：代码 MIT，内容 CC BY-NC 4.0 · 更新：2026-11-07
 
-这份材料记录的是**一个人公开自述的一条路径**（2026-11-07 公众号文章），未经独立审计，样本量为 1。它不是成功学、不是简历、不是 AI 分身，不提供职业、投资、财税、医疗或法律建议，也不承诺任何收益。
+这些材料记录的是一条真实路径：一个人从湖北农村走到腾讯、百度、大模型公司副总裁，再到现在自己干。**样本量是 1，所有数字都是本人自述、未经独立审计。** 不是成功学、不是简历、不是 AI 分身，不提供职业、投资、财税、医疗或法律建议，也不承诺任何收益。
 
 事实分级（引用时必须保留）：
-- `[公开自述]`：作者本人公开发表，未经独立审计
-- `[工作原则]`：作者使用的思考规则，不是事实陈述
+- `[公开自述]`：本人公开发表，未经独立审计
+- `[工作原则]`：本人使用的思考规则，不是事实陈述
 - `[本仓库整理]`：由前两者推导的清单与结构，不是事实
-- `[存疑]`：材料冲突或证据不足，本仓库不判断
+- `[存疑]`：材料冲突或证据不足，不做判断
 
 给 AI 的规则（先读这份）：[AGENTS.md](https://github.com/AIPMAndy/OpenAndy/blob/main/AGENTS.md)。不得扮演作者本人、不得填平任职年份的口径冲突、不得把相关写成因果、不得生成收益预测、不得推断未公开的公司名/客户名/金额/联系方式。引用任何数字前先读 SOURCES.md。
 
 ## 事实与口径
 
 - [SOURCES.md](https://github.com/AIPMAndy/OpenAndy/blob/main/SOURCES.md)：来源表、四级事实标记、全部数字的限定语、口径冲突为何不合并、隐私边界
-- 所有数字（30 万月流水、1000+ 咨询客户、6 万粉丝、40 万年产值等）均为作者公开自述；40 万是产值不是利润，30 万是流水不是利润
+- 40 万是产值不是利润；30 万是月流水不是利润；1000+ 是有完整文档记录的客户数，不是 Offer 数；6 万多是全网粉丝合计
 - 任职年份只采用 2026-11-07 文章的口径，不与其他材料合并
 
 ## 文档
 
-- [README.md](https://github.com/AIPMAndy/OpenAndy/blob/main/README.md)：项目入口、不是什么、30 秒上手
-- [STORY.md](https://github.com/AIPMAndy/OpenAndy/blob/main/STORY.md)：时间线，每阶段写「事实 / 当时判断 / 代价 / 可迁移的一条」
+- [ME.md](https://github.com/AIPMAndy/OpenAndy/blob/main/ME.md)：我是谁、偏好、偏见、边界、怎么合作
+- [README.md](https://github.com/AIPMAndy/OpenAndy/blob/main/README.md)：项目入口、为什么开源、事实与边界
+- [STORY.md](https://github.com/AIPMAndy/OpenAndy/blob/main/STORY.md)：11 个阶段，每段写「事实 / 当时判断 / 代价 / 可迁移的一条」
 - [PRINCIPLES.md](https://github.com/AIPMAndy/OpenAndy/blob/main/PRINCIPLES.md)：九条认知公理 + 第一性原理五步优先级
 - [DECISIONS.md](https://github.com/AIPMAndy/OpenAndy/blob/main/DECISIONS.md)：七组可打勾的决策清单
 - [AGENTS.md](https://github.com/AIPMAndy/OpenAndy/blob/main/AGENTS.md)：给 AI 的读取与引用规则
@@ -46,3 +47,4 @@
 
 - [README_EN.md](https://github.com/AIPMAndy/OpenAndy/blob/main/README_EN.md)：English overview
 - [index.html](https://github.com/AIPMAndy/OpenAndy/blob/main/index.html)：单文件阅读页，无构建、无外部依赖
+- [CHANGELOG.md](https://github.com/AIPMAndy/OpenAndy/blob/main/CHANGELOG.md)：版本记录

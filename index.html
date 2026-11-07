@@ -3,8 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OpenAndy · 把一个人的经历、判断和代价开源</title>
-<meta name="description" content="OpenAndy：把一个人的经历、判断和代价，开源成人和 AI 都能读取的知识库。基于 AI酋长Andy 2026-11-07 公开自述。">
+<title>OpenAndy · 把我自己开源</title>
+<meta name="description" content="OpenAndy：把我自己开源。经历、判断、错和代价，都在这里。基于 AI酋长Andy 2026-11-07 公开自述，数字未审计，不承诺收益。">
+<link rel="canonical" href="https://aipmandy.github.io/OpenAndy/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OpenAndy · 把我自己开源">
+<meta property="og:description" content="经历、判断、错和代价，都在这里。人能看，AI 也能读。">
+<meta property="og:url" content="https://aipmandy.github.io/OpenAndy/">
 <style>
   :root{
     --bg:#faf9f6; --surface:#ffffff; --ink:#1c1c1a; --muted:#5f5d57;
@@ -14,51 +19,50 @@
   body{margin:0;background:var(--bg);color:var(--ink);
     font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
     line-height:1.75;-webkit-font-smoothing:antialiased}
-  a{color:var(--accent);text-decoration:none;border-bottom:1px solid #d9c4b2}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid #dcc9b6}
   a:hover{border-bottom-color:var(--accent)}
-  .wrap{max-width:860px;margin:0 auto;padding:0 24px}
-  header{padding:64px 0 40px;border-bottom:1px solid var(--line)}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+  header{padding:64px 0 36px;border-bottom:1px solid var(--line)}
   .kicker{font-size:12px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase}
-  h1{font-size:46px;line-height:1.2;margin:14px 0 10px;letter-spacing:-.02em}
-  .lede{font-size:19px;color:var(--ink);margin:0 0 18px;max-width:660px}
-  .sub{color:var(--muted);font-size:15px;margin:0}
+  h1{font-size:48px;line-height:1.15;margin:12px 0 6px;letter-spacing:-.025em}
+  .lede{font-size:28px;margin:0 0 20px;color:var(--accent);font-weight:600;letter-spacing:-.01em}
+  .story{font-size:16px;color:var(--ink);max-width:680px;margin:0 0 8px}
+  .story span{color:var(--muted)}
   .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
   .tag{font-size:12px;border:1px solid var(--line);background:var(--surface);
     border-radius:999px;padding:4px 12px;color:var(--muted)}
-  nav{display:flex;flex-wrap:wrap;gap:18px;padding:18px 0;border-bottom:1px solid var(--line);
+  nav{display:flex;flex-wrap:wrap;gap:18px;padding:16px 0;border-bottom:1px solid var(--line);
     font-size:14px;position:sticky;top:0;background:var(--bg);z-index:2}
-  section{padding:44px 0;border-bottom:1px solid var(--line)}
-  h2{font-size:25px;margin:0 0 6px;letter-spacing:-.01em}
-  .note{color:var(--muted);font-size:14px;margin:0 0 22px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 22px}
-  .card h3{margin:0 0 10px;font-size:16px}
-  .card ul,.cards ul{margin:0;padding-left:20px;font-size:14px;color:var(--muted)}
-  .card li{margin:5px 0}
-  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}
-  .cards div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:14px}
+  nav a{border-bottom:none;color:var(--muted)}
+  nav a:hover{color:var(--accent)}
+  section{padding:40px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:24px;margin:0 0 6px;letter-spacing:-.01em}
+  .note{color:var(--muted);font-size:14px;margin:0 0 20px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-weight:600;color:var(--muted);background:var(--accent-soft);font-size:13px}
+  td:first-child{font-weight:600;white-space:nowrap}
+  blockquote{margin:20px 0 0;padding:14px 18px;background:var(--accent-soft);
+    border-left:3px solid var(--accent);border-radius:0 8px 8px 0;font-size:15px}
+  blockquote p{margin:0}
   code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;
     background:var(--code);padding:2px 6px;border-radius:4px}
   pre{background:var(--code);border:1px solid var(--line);border-radius:10px;padding:18px 20px;
     overflow-x:auto;font-size:13px;line-height:1.9;color:#33312c}
   pre code{background:none;padding:0}
-  table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
-  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{font-weight:600;color:var(--muted);background:var(--accent-soft);font-size:13px}
-  td:first-child{font-weight:600;white-space:nowrap}
-  blockquote{margin:18px 0 0;padding:14px 18px;background:var(--accent-soft);
-    border-left:3px solid var(--accent);border-radius:0 8px 8px 0;font-size:15px}
-  .grades{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
-  .grade{border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--surface)}
-  .grade b{display:block;font-size:13px;margin-bottom:4px}
-  .grade span{font-size:12px;color:var(--muted);line-height:1.6;display:block}
-  .links{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:14px;margin-top:16px}
-  footer{padding:36px 0 60px;color:var(--muted);font-size:13px}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+  .card b{display:block;font-size:14px;margin-bottom:6px}
+  .card span{font-size:13px;color:var(--muted);line-height:1.7;display:block}
+  .warn{border-left:3px solid #b3541e;background:#fbf1ea;padding:14px 18px;border-radius:0 8px 8px 0;font-size:14px}
+  .warn ul{margin:8px 0 0;padding-left:20px}
+  .warn li{margin:5px 0}
+  footer{padding:34px 0 60px;color:var(--muted);font-size:13px}
   footer p{margin:6px 0}
   @media(max-width:640px){
-    h1{font-size:34px} .grid,.cards,.grades{grid-template-columns:1fr}
-    header{padding:40px 0 28px} section{padding:32px 0}
-    table{font-size:13px} th,td{padding:9px 8px}
+    h1{font-size:36px} .lede{font-size:23px} .cards{grid-template-columns:1fr}
+    header{padding:40px 0 26px} section{padding:30px 0}
+    table{font-size:13px} th,td{padding:8px}
   }
 </style>
 </head>
@@ -68,76 +72,58 @@
 <header>
   <div class="kicker">Open source · 2026-11-07</div>
   <h1>OpenAndy</h1>
-  <p class="lede">把一个人的经历、判断和代价，开源成人和 AI 都能读取的知识库。</p>
-  <p class="sub">不是成功学，不是简历，不是又一本赚钱手册。基于 AI 酋长 Andy 2026-11-07 的公开自述，附来源分级、口径冲突说明与隐私边界。</p>
+  <p class="lede">把我自己开源。</p>
+  <p class="story">2026 年 1 月 12 日，北京零下 15 度。早上 6 点多，我出门坐地铁去北医三院，做眼睛手术。<span>换上人工晶体，手术结束，我需要别人扶着才能回去休息。那天想起的是湖北农村、辣椒拌饭、绿皮火车、腾讯、百度、副总裁，还有手术前写在日记里的那句：「我燃烧自己努力工作，忙到忘记自己。」</span></p>
   <div class="meta">
+    <span class="tag">10 个条目</span>
+    <span class="tag">5 份方法手册</span>
+    <span class="tag">9 条判断规则</span>
     <span class="tag">零依赖 · Python 3.9+</span>
-    <span class="tag">9 个结构化条目</span>
-    <span class="tag">代码 MIT / 内容 CC BY-NC 4.0</span>
     <span class="tag">不联网 · 无 API Key</span>
-    <span class="tag">不承诺收益</span>
+    <span class="tag">代码 MIT / 内容 CC BY-NC 4.0</span>
   </div>
 </header>
 
 <nav>
-  <a href="#what">是什么</a>
-  <a href="#facts">事实与口径</a>
+  <a href="#me">我是谁</a>
+  <a href="#inside">这里有什么</a>
   <a href="#story">时间线</a>
   <a href="#layers">赚钱四层</a>
-  <a href="#axioms">九条公理</a>
-  <a href="#start">上手</a>
-  <a href="#docs">全部文档</a>
+  <a href="#rules">判断规则</a>
+  <a href="#start">怎么用</a>
 </nav>
 
-<section id="what">
-  <h2>这个仓库是什么，不是什么</h2>
-  <p class="note">按「先删非必需项」的原则，先把容易变成内容农场的部分删掉，剩下的才值得维护。</p>
-  <div class="grid">
-    <div class="card">
-      <h3>是</h3>
-      <ul>
-        <li>一条每一阶段都标注代价的时间线</li>
-        <li>作者实际用来做判断的九条规则</li>
-        <li>能直接打勾的决策清单与 5 份方法手册</li>
-        <li>人和 AI 都可检索的索引：<code>llms.txt</code> / <code>llms-full.txt</code> / <code>index.json</code></li>
-        <li>每个数字都标明「自述、未经独立审计」</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>不是</h3>
-      <ul>
-        <li>不是成功学：写进了开倒的店、白内障手术、"我还没有成功"</li>
-        <li>不是课程或引流页：无付费墙、无转化漏斗</li>
-        <li>不是简历：不补未公开的公司、客户、金额</li>
-        <li>不是 AI 分身：不调用模型、不上传数据</li>
-        <li>不是收益承诺：所有数字是历史自述，不是可复制结果</li>
-      </ul>
-    </div>
-  </div>
-  <blockquote>「我曾经以为，只要足够努力，一个人就能够改变自己的命运。后来才明白，努力只是最基本的条件。」</blockquote>
+<section id="me">
+  <h2>我是谁</h2>
+  <p class="note">湖北农村出来，学数学，进腾讯做 AI，去百度做大模型和视频生成，创业，做过大模型公司副总裁，现在自己干。</p>
+  <p style="font-size:15px;max-width:700px">我开倒过店，创业交过学费，2024 年身体出问题，2026 年上了手术台；我也确实从零做过亿级业务线、带过 50 人左右的团队、六年攒下 1000 多位有完整记录的咨询客户、帮父母把农产品做到一年 40 万产值。<b>两边都是真的，我都写进来。</b></p>
+  <blockquote><p>我曾经以为，进大厂、拿高薪、做管理、负责大项目，就是普通人改变命运的最好证明。后来发现我负责过很大的业务，那些钱不是我的。</p></blockquote>
+  <p style="margin-top:16px;font-size:14px"><a href="https://github.com/AIPMAndy/OpenAndy/blob/main/ME.md">完整的一页：偏好、偏见、边界、怎么合作 →</a></p>
 </section>
 
-<section id="facts">
-  <h2>事实分级与口径</h2>
-  <p class="note">这个仓库最容易被误用的地方，是把「一个人的经验」当成「普遍规律」。引用时必须保留标记。</p>
-  <div class="grades">
-    <div class="grade"><b>[公开自述]</b><span>作者公开发表，未经独立审计</span></div>
-    <div class="grade"><b>[工作原则]</b><span>作者的思考规则，不是事实</span></div>
-    <div class="grade"><b>[本仓库整理]</b><span>推导出的清单，不是事实</span></div>
-    <div class="grade"><b>[存疑]</b><span>冲突或证据不足，不判断</span></div>
-  </div>
-  <div class="cards">
-    <div><b>口径不合并</b><br>任职年份在不同材料中不一致，本仓库只采用 2026-11-07 文章口径，不推断、不填平。</div>
-    <div><b>数字有定语</b><br>30 万是月流水不是利润；1000+ 是有文档记录的客户不是 Offer 数；40 万是产值不是净利润。</div>
-    <div><b>相关 ≠ 因果</b><br>企业业绩、健康变化、内容增长都未做归因验证，单一案例不构成因果论证。</div>
-    <div><b>隐私不进仓库</b><br>客户、雇主、合同金额、家庭身份信息与私人联系方式一律排除。</div>
-  </div>
-  <p style="margin-top:18px;font-size:14px"><a href="SOURCES.md">完整来源表与数字清单 →</a></p>
+<section id="inside">
+  <h2>这里有什么</h2>
+  <p class="note">没有课程、没有付费墙、没有转化漏斗。十份文档，一个零依赖脚本，一份给 AI 的索引。</p>
+  <table>
+    <thead><tr><th>想看什么</th><th>里面是什么</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://github.com/AIPMAndy/OpenAndy/blob/main/ME.md">我是谁</a></td><td>一句话履历、现在靠什么吃饭、我的偏好和偏见、我不做的事</td></tr>
+      <tr><td><a href="https://github.com/AIPMAndy/OpenAndy/blob/main/STORY.md">时间线</a></td><td>11 个阶段，每段写清得到什么、付了什么</td></tr>
+      <tr><td><a href="https://github.com/AIPMAndy/OpenAndy/blob/main/PRINCIPLES.md">判断规则</a></td><td>九条认知公理，加上质疑需求→删除→简化→加速→自动化</td></tr>
+      <tr><td><a href="https://github.com/AIPMAndy/OpenAndy/blob/main/DECISIONS.md">决策清单</a></td><td>七组能打勾的清单：接不接这个活、要不要做副业、流水还是利润</td></tr>
+      <tr><td><a href="https://github.com/AIPMAndy/OpenAndy/blob/main/playbook/01-money-layers.md">赚钱四层</a></td><td>时间→经验→商业结果→内容获客，四层各自的代价</td></tr>
+      <tr><td><a href="https://github.com/AIPMAndy/OpenAndy/blob/main/playbook/02-first-client.md">第一位客户</a></td><td>六年、1000+ 客户，从一次改简历到长期信任</td></tr>
+      <tr><td><a href="https://github.com/AIPMAndy/OpenAndy/blob/main/playbook/03-ai-for-small-business.md">帮父母做生意</a></td><td>免费工具、不到 1 万粉、一年 40 万产值</td></tr>
+      <tr><td><a href="https://github.com/AIPMAndy/OpenAndy/blob/main/playbook/04-what-it-cost.md">代价</a></td><td>眼睛、时间所有权，哪些钱不值得赚</td></tr>
+      <tr><td><a href="https://github.com/AIPMAndy/OpenAndy/blob/main/playbook/05-why-open.md">为什么免费</a></td><td>小时候没资源，所以少让人花几千块、少走几个月</td></tr>
+      <tr><td><a href="https://github.com/AIPMAndy/OpenAndy/blob/main/SOURCES.md">事实与口径</a></td><td>来源分级、数字定语、口径冲突、隐私边界</td></tr>
+    </tbody>
+  </table>
 </section>
 
 <section id="story">
   <h2>时间线：得到什么，付出什么</h2>
-  <p class="note">每个阶段强制写四栏：事实 / 当时判断 / 代价 / 可迁移的一条。下表是精简视图，全文见 <a href="STORY.md">STORY.md</a>。</p>
+  <p class="note">每段强制写四栏：事实 / 当时判断 / 代价 / 可迁移的一条。下面是精简视图，全文见 <a href="https://github.com/AIPMAndy/OpenAndy/blob/main/STORY.md">STORY.md</a>。</p>
   <table>
     <thead><tr><th>阶段</th><th>得到</th><th>付出</th></tr></thead>
     <tbody>
@@ -146,87 +132,79 @@
       <tr><td>大学创业</td><td>30 万月流水、30 人团队</td><td>开倒过店，学到流水 ≠ 利润</td></tr>
       <tr><td>绿皮火车</td><td>进入机会密度更高的市场</td><td>离家、从零开始、无确定性</td></tr>
       <tr><td>腾讯</td><td>从零做出亿级 AI 业务线</td><td>运营商务全包，时间被吞</td></tr>
-      <tr><td>副总裁</td><td>规模、团队、融资经验</td><td>健康、时间所有权；"钱不是我的"</td></tr>
+      <tr><td>副总裁</td><td>规模、团队、融资经验</td><td>健康、时间所有权；钱不是我的</td></tr>
       <tr><td>六年副业</td><td>1000+ 客户、长期信任</td><td>六年并行投入，占恢复时间</td></tr>
       <tr><td>2026 开源</td><td>内容获客、可复用方法</td><td>持续维护，放弃部分直接变现</td></tr>
     </tbody>
   </table>
-  <blockquote>转折点不是升职，是 2026-01-12 的眼睛手术：「如果赚钱的代价，是把身体、时间和生活全部交出去，那么赚到更多钱，到底是为了什么？」</blockquote>
+  <blockquote><p>转折点不是升职，是 2026-01-12 的眼睛手术：「如果赚钱的代价，是把身体、时间和生活全部交出去，那么赚到更多钱，到底是为了什么？」</p></blockquote>
 </section>
 
 <section id="layers">
   <h2>赚钱的四层</h2>
-  <p class="note">作者对自己赚钱方式的分类框架，不是普遍规律，四层可以同时存在，不需要按顺序毕业。</p>
+  <p class="note">这是我对自己赚钱方式的分类，不是普遍规律。四层可以同时存在，不需要按顺序毕业。</p>
   <table>
     <thead><tr><th>层</th><th>卖什么</th><th>约束与代价</th></tr></thead>
     <tbody>
-      <tr><td>1 时间</td><td>上班一天、咨询一次</td><td>线性、停手即停收；极限是"忙到忘记自己"</td></tr>
+      <tr><td>1 时间</td><td>上班一天、咨询一次</td><td>线性、停手即停收；极限是「忙到忘记自己」</td></tr>
       <tr><td>2 经验</td><td>别人要花几年才有的行业判断</td><td>仍需本人在场，经验要靠交付物证明</td></tr>
       <tr><td>3 商业结果</td><td>增收入、降成本、拿客户</td><td>要对结果负责，举证责任转移</td></tr>
       <tr><td>4 内容获客</td><td>让内容先被看见，再谈合作</td><td>持续投入、不能停（熵增）</td></tr>
     </tbody>
   </table>
-  <p style="font-size:14px;margin-top:16px">完整版含「进入下一层的真实信号」与六条常见误判 → <a href="playbook/01-money-layers.md">01-money-layers.md</a></p>
+  <p style="font-size:14px;margin-top:14px"><a href="https://github.com/AIPMAndy/OpenAndy/blob/main/playbook/01-money-layers.md">四层的信号与六条常见误判 →</a></p>
 </section>
 
-<section id="axioms">
-  <h2>九条认知公理 · 一页版</h2>
-  <p class="note">作者用来做判断的规则，不是客观规律；用错场景会得出坏结论。</p>
+<section id="rules">
+  <h2>九条判断规则 · 一页版</h2>
+  <p class="note">不是客观规律，是我做判断时真的在用的规则。用错场景会得出坏结论。</p>
   <div class="cards">
-    <div><b>1 熵增</b><br>有序要持续投入，没有一劳永逸</div>
-    <div><b>2 还原</b><br>拆到基本事实，不靠类比</div>
-    <div><b>3 对立统一</b><br>任何方案都有取舍，列出代价</div>
-    <div><b>4 演化选择</b><br>快速试错筛选，不预设最优</div>
-    <div><b>5 概率不确定</b><br>给置信度，不给断言</div>
-    <div><b>6 因果边界</b><br>相关 ≠ 因果，需干预验证</div>
-    <div><b>7 有限理性</b><br>求可验证的满意解</div>
-    <div><b>8 机会成本</b><br>看增量，忽略沉没成本</div>
-    <div><b>9 系统涌现</b><br>看元素，也看反馈回路</div>
-    <div><b>工程顺序</b><br>质疑需求 → 删除 → 简化 → 加速 → 最后自动化</div>
+    <div class="card"><b>1 熵增</b><span>有序要持续投入，没有一劳永逸</span></div>
+    <div class="card"><b>2 还原</b><span>拆到基本事实，不靠类比</span></div>
+    <div class="card"><b>3 对立统一</b><span>任何方案都有取舍，列出代价</span></div>
+    <div class="card"><b>4 演化选择</b><span>快速试错筛选，不预设最优</span></div>
+    <div class="card"><b>5 概率不确定</b><span>给置信度，不给断言</span></div>
+    <div class="card"><b>6 因果边界</b><span>相关 ≠ 因果，需干预验证</span></div>
+    <div class="card"><b>7 有限理性</b><span>求可验证的满意解</span></div>
+    <div class="card"><b>8 机会成本</b><span>看增量，忽略沉没成本</span></div>
+    <div class="card"><b>9 系统涌现</b><span>看元素，也看反馈回路</span></div>
+    <div class="card"><b>工程顺序</b><span>质疑需求 → 删除 → 简化 → 加速 → 最后自动化</span></div>
   </div>
-  <p style="margin-top:16px;font-size:14px">三个自检：加功能前问「能删什么」；优化前问「这段必要吗」；自动化前问「流程能否取消」。全文 → <a href="PRINCIPLES.md">PRINCIPLES.md</a></p>
+  <p style="margin-top:14px;font-size:14px">三个自检：加功能前问「能删什么」；优化前问「这段必要吗」；自动化前问「流程能否取消」。<a href="https://github.com/AIPMAndy/OpenAndy/blob/main/PRINCIPLES.md">全文 →</a></p>
 </section>
 
 <section id="start">
-  <h2>30 秒上手</h2>
-  <p class="note">零依赖，不安装、不联网、不要 API Key。CLI 只做检索与一致性检查，不生成建议。</p>
+  <h2>怎么用</h2>
+  <p class="note">零依赖，不安装、不联网、不要 API Key。脚本只做检索和一致性检查，不生成建议。</p>
 <pre><code>git clone https://github.com/AIPMAndy/OpenAndy.git
 cd OpenAndy
 
-python3 openandy.py list                # 列出全部条目
+python3 openandy.py list                # 10 个条目
 python3 openandy.py ask 副业            # 关键词检索
-python3 openandy.py show money-layers   # 输出某篇全文
-python3 openandy.py check               # 校验索引 / 链接 / 来源 / 隐私
+python3 openandy.py show what-it-cost   # 输出某篇全文
+python3 openandy.py check               # 查索引、链接、来源、隐私
 python3 openandy.py build               # 重新生成 llms-full.txt</code></pre>
-  <p style="font-size:14px">想让 AI 读：先给它 <a href="llms.txt">llms.txt</a> 与 <a href="AGENTS.md">AGENTS.md</a>，再按需加载 <a href="llms-full.txt">llms-full.txt</a>。</p>
+  <p style="font-size:14px">想让 AI 读：先给 <a href="https://github.com/AIPMAndy/OpenAndy/blob/main/llms.txt">llms.txt</a> 和 <a href="https://github.com/AIPMAndy/OpenAndy/blob/main/AGENTS.md">AGENTS.md</a>，再按需加载 <a href="https://github.com/AIPMAndy/OpenAndy/blob/main/llms-full.txt">llms-full.txt</a>。</p>
 </section>
 
-<section id="docs">
-  <h2>全部文档</h2>
-  <div class="links">
-    <a href="README.md">README</a>
-    <a href="STORY.md">时间线</a>
-    <a href="PRINCIPLES.md">认知公理</a>
-    <a href="DECISIONS.md">决策清单</a>
-    <a href="SOURCES.md">来源与口径</a>
-    <a href="AGENTS.md">给 AI 的规则</a>
-    <a href="CONTRIBUTING.md">贡献指南</a>
-    <a href="playbook/01-money-layers.md">01 赚钱四层</a>
-    <a href="playbook/02-first-client.md">02 第一位客户</a>
-    <a href="playbook/03-ai-for-small-business.md">03 小生意与 AI</a>
-    <a href="playbook/04-what-it-cost.md">04 代价</a>
-    <a href="playbook/05-why-open.md">05 为什么开源</a>
-    <a href="README_EN.md">English</a>
-    <a href="data/index.json">index.json</a>
-    <a href="LICENSE">LICENSE</a>
-    <a href="LICENSE-CONTENT">LICENSE-CONTENT</a>
+<section id="limits">
+  <h2>事实与边界</h2>
+  <div class="warn">
+    <b>这段决定你该怎么用这里的东西：</b>
+    <ul>
+      <li><b>数字都是我自己说的，没审计。</b>40 万是产值不是利润；30 万是月流水不是利润；1000+ 是客户数不是 Offer 数；6 万多是全网粉丝合计。</li>
+      <li><b>年份只按 2026-11-07 那篇文章算。</b>另外一些履历材料对不上，我不合并、不推断、不取中间值。</li>
+      <li><b>客户、公司、金额、家人信息不写。</b>能讲的是方法，不是别人的隐私。</li>
+      <li><b>不给收益承诺，不做医疗、投资、职业建议。</b>我的路径只有一条，样本量是 1。</li>
+      <li><b>相关不等于因果。</b>我做了什么、后来发生了什么，不等于前者导致后者。</li>
+    </ul>
   </div>
 </section>
 
 <footer>
   <p><b>AI 酋长 Andy</b> · GitHub / X / 微信 <code>AIPMAndy</code> · <a href="https://metaver.vip/">metaver.vip</a> · <a href="https://github.com/AIPMAndy/OpenAndy">github.com/AIPMAndy/OpenAndy</a></p>
   <p>愿景：让更多人类通过 AI 实现财富自由和精神自由。它可以从一个人第一次靠自己赚到 400 元开始。</p>
-  <p>内容基于作者截至 2026-11-07 的公开自述，未经独立审计；不构成职业、投资、财税、医疗或法律建议。代码 MIT，内容 CC BY-NC 4.0。</p>
+  <p>代码 MIT，内容 CC BY-NC 4.0。所有数字为本人公开自述，未经独立审计。</p>
 </footer>
 
 </div>
