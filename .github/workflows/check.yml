@@ -1,0 +1,25 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate index, links, sources and privacy scan
+        run: python3 openandy.py check
+      - name: Verify llms-full.txt is in sync
+        run: |
+          cp llms-full.txt /tmp/llms-full.before
+          python3 openandy.py build
+          diff -u /tmp/llms-full.before llms-full.txt
+      - name: Behaviour tests
+        run: python3 -m unittest discover -s tests -v

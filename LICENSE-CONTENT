@@ -1,0 +1,39 @@
+Content License — Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+Copyright (c) 2026 AI酋长Andy (AIPMAndy)
+
+The written content of this repository — including README.md, README_EN.md,
+STORY.md, PRINCIPLES.md, DECISIONS.md, SOURCES.md, AGENTS.md, CONTRIBUTING.md,
+all files under playbook/, llms.txt and llms-full.txt — is licensed under
+Creative Commons Attribution-NonCommercial 4.0 International.
+
+You are free to:
+
+  Share  — copy and redistribute the material in any medium or format
+  Adapt  — remix, transform, and build upon the material
+
+Under the following terms:
+
+  Attribution        — You must give appropriate credit, provide a link to the
+                       license, and indicate if changes were made. Please also
+                       link back to https://github.com/AIPMAndy/OpenAndy and
+                       keep the fact-grade markers ([公开自述] / [工作原则] /
+                       [本仓库整理] / [存疑]) intact.
+  NonCommercial      — You may not use the material for commercial purposes.
+  No additional      — You may not apply legal terms or technological measures
+    restrictions       that legally restrict others from doing anything the
+                       license permits.
+
+No warranties are given. The material records one person's public self-account,
+unaudited, and does not constitute career, investment, tax, medical or legal
+advice. All figures are historical self-reported numbers, not guarantees.
+
+Full legal text (authoritative):
+  https://creativecommons.org/licenses/by-nc/4.0/legalcode
+Human-readable summary:
+  https://creativecommons.org/licenses/by-nc/4.0/
+
+For commercial use, translation publishing, or reuse beyond this license,
+contact the author via https://metaver.vip/ or WeChat AIPMAndy.
+
+Code in this repository is separately licensed under MIT — see LICENSE.

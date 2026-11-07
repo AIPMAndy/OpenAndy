@@ -1,0 +1,48 @@
+# OpenAndy
+
+> 把一个人的经历、判断和代价，开源成人和 AI 都能读取的知识库。作者：AI酋长Andy（GitHub / X：@AIPMAndy），个人官网 https://metaver.vip/ 。
+> 仓库：https://github.com/AIPMAndy/OpenAndy · 许可：代码 MIT，内容 CC BY-NC 4.0 · 更新：2026-11-07
+
+这份材料记录的是**一个人公开自述的一条路径**（2026-11-07 公众号文章），未经独立审计，样本量为 1。它不是成功学、不是简历、不是 AI 分身，不提供职业、投资、财税、医疗或法律建议，也不承诺任何收益。
+
+事实分级（引用时必须保留）：
+- `[公开自述]`：作者本人公开发表，未经独立审计
+- `[工作原则]`：作者使用的思考规则，不是事实陈述
+- `[本仓库整理]`：由前两者推导的清单与结构，不是事实
+- `[存疑]`：材料冲突或证据不足，本仓库不判断
+
+给 AI 的规则（先读这份）：[AGENTS.md](https://github.com/AIPMAndy/OpenAndy/blob/main/AGENTS.md)。不得扮演作者本人、不得填平任职年份的口径冲突、不得把相关写成因果、不得生成收益预测、不得推断未公开的公司名/客户名/金额/联系方式。引用任何数字前先读 SOURCES.md。
+
+## 事实与口径
+
+- [SOURCES.md](https://github.com/AIPMAndy/OpenAndy/blob/main/SOURCES.md)：来源表、四级事实标记、全部数字的限定语、口径冲突为何不合并、隐私边界
+- 所有数字（30 万月流水、1000+ 咨询客户、6 万粉丝、40 万年产值等）均为作者公开自述；40 万是产值不是利润，30 万是流水不是利润
+- 任职年份只采用 2026-11-07 文章的口径，不与其他材料合并
+
+## 文档
+
+- [README.md](https://github.com/AIPMAndy/OpenAndy/blob/main/README.md)：项目入口、不是什么、30 秒上手
+- [STORY.md](https://github.com/AIPMAndy/OpenAndy/blob/main/STORY.md)：时间线，每阶段写「事实 / 当时判断 / 代价 / 可迁移的一条」
+- [PRINCIPLES.md](https://github.com/AIPMAndy/OpenAndy/blob/main/PRINCIPLES.md)：九条认知公理 + 第一性原理五步优先级
+- [DECISIONS.md](https://github.com/AIPMAndy/OpenAndy/blob/main/DECISIONS.md)：七组可打勾的决策清单
+- [AGENTS.md](https://github.com/AIPMAndy/OpenAndy/blob/main/AGENTS.md)：给 AI 的读取与引用规则
+- [CONTRIBUTING.md](https://github.com/AIPMAndy/OpenAndy/blob/main/CONTRIBUTING.md)：贡献规则与隐私红线
+
+## 方法手册
+
+- [01 赚钱的四层](https://github.com/AIPMAndy/OpenAndy/blob/main/playbook/01-money-layers.md)：时间 → 经验 → 商业结果 → 内容获客
+- [02 从一次咨询到六年信任](https://github.com/AIPMAndy/OpenAndy/blob/main/playbook/02-first-client.md)：第一位付费客户与长期信任
+- [03 用免费 AI 工具帮一个小生意找到客户](https://github.com/AIPMAndy/OpenAndy/blob/main/playbook/03-ai-for-small-business.md)：农产品案例的最小做法
+- [04 代价：身体、时间，哪些钱不值得赚](https://github.com/AIPMAndy/OpenAndy/blob/main/playbook/04-what-it-cost.md)：三层被混为一谈的东西
+- [05 为什么把这些免费放出来](https://github.com/AIPMAndy/OpenAndy/blob/main/playbook/05-why-open.md)：开源的理由与边界
+
+## 机器可读
+
+- [llms-full.txt](https://github.com/AIPMAndy/OpenAndy/blob/main/llms-full.txt)：全部正文拼接（由 `openandy.py build` 生成）
+- [data/index.json](https://github.com/AIPMAndy/OpenAndy/blob/main/data/index.json)：结构化索引（只存元数据，不复制正文）
+- [openandy.py](https://github.com/AIPMAndy/OpenAndy/blob/main/openandy.py)：零依赖 CLI，list / ask / show / check / build
+
+## 可选
+
+- [README_EN.md](https://github.com/AIPMAndy/OpenAndy/blob/main/README_EN.md)：English overview
+- [index.html](https://github.com/AIPMAndy/OpenAndy/blob/main/index.html)：单文件阅读页，无构建、无外部依赖
